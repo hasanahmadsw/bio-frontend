@@ -130,12 +130,12 @@ export const NavBar = (props: Props) => {
         }}
       >
         <Toolbar>
-          <Grid container justifyContent="space-between">
+          <Grid container justifyContent="space-between" alignItems="center">
             <Grid item md={3} xs={6}>
               <CustomLink
                 href="/"
                 color="primary"
-                variant="h3"
+                variant="h4"
                 fontWeight="700"
               >
                 Hasan Ahmad
