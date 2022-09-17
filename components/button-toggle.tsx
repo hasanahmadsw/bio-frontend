@@ -21,24 +21,15 @@ const ButtonToggle: FC<{}> = () => {
     );
 
   return (
-    <div
-      css={css`
-        display: grid;
-        grid-gap: 8px;
-      `}
+    <Button
+      size="large"
+      variant="contained"
+      sx={{ padding: "1rem" }}
+      endIcon={resolvedTheme === "light" ? <DarkModeIcon /> : <LightModeIcon />}
+      onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
     >
-      <Button
-        size="large"
-        variant="contained"
-        sx={{ padding: "1rem" }}
-        endIcon={
-          resolvedTheme === "light" ? <DarkModeIcon /> : <LightModeIcon />
-        }
-        onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
-      >
-        Switch to {resolvedTheme === "light" ? "Dark" : "Light"} Mode
-      </Button>
-    </div>
+      Switch to {resolvedTheme === "light" ? "Dark" : "Light"} Mode
+    </Button>
   );
 };
 
