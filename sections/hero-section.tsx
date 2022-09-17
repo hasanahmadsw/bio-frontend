@@ -22,6 +22,7 @@ export const HeroSection = () => {
     <Paper
       sx={{
         borderRadius: "0",
+        padding: "1rem",
         paddingTop: "6rem",
       }}
     >
