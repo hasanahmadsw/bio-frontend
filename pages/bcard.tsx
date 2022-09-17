@@ -161,7 +161,7 @@ export const BusinessCard: React.FC<BusinessCardProps> = () => {
             </Grid>
           </Box>
         </Paper>
-        <Paper variant="outlined" sx={{ padding: "2rem", marginTop: "1rem" }}>
+        <Paper variant="outlined" sx={{ padding: "1rem", marginTop: "1rem" }}>
           <SkillsSection />
         </Paper>
         <Paper sx={{ padding: "2rem", textAlign: "center" }}>
