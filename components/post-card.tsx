@@ -1,7 +1,7 @@
 import { styled, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
-import Moment from "react-moment";
+import { IPost } from "../types";
 
 const Post = styled("div")(({ theme }) => ({
   cursor: "pointer",
@@ -21,7 +21,7 @@ const ImageCard = styled("div")(() => ({
 }));
 
 interface PostCardProps {
-  post: any;
+  post: IPost;
 }
 
 export const PostCard: React.FC<PostCardProps> = ({ post }) => {
@@ -30,8 +30,8 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <Post>
         <ImageCard>
           <img
-            src={post.frontmatter.cover_image}
-            alt={post.frontmatter.title}
+            src={post.metaData.mainImageUrl}
+            alt={post.metaData.title}
             height="100%"
             width="100%"
             style={{ objectFit: "cover", borderRadius: "8px" }}
@@ -44,10 +44,12 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
           fontWeight="700"
           paddingTop="1rem"
         >
-          <Moment format="D MMM YYYY">{post.frontmatter.date}</Moment>
+          {/* <Moment format="D MMM YYYY"> */}
+          {post.metaData.dateString}
+          {/* </Moment> */}
         </Typography>
         <Typography variant="h3" fontWeight="600" paddingY="1rem">
-          {post.frontmatter.title}
+          {post.metaData.title}
         </Typography>
       </Post>
     </Link>

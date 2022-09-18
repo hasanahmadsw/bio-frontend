@@ -40,6 +40,6 @@ Meta.defaultProps = {
   ogTitle: "Hasan Ahmad | حسن احمد",
   ogType: "website",
   ogUrl: "https://hasanahmad.net",
-  ogImage: "https://hasanahmad.net/logo.png",
+  ogImage: "https://hasanahmad.net/favicon.png",
 };
 export default Meta;

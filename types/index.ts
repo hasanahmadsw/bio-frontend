@@ -53,32 +53,28 @@ export interface ISocialMedia {
   telegtam?: string;
 }
 
-export interface PostFrontmatter {
-  title: string;
-  category: string;
-  date: string;
-  cover_image: string;
-  author: string;
-  author_image: string;
-}
+export type Tag = "Angular" | "Ionic" | "React" | "Next" | "Nest" | "Node";
 
-export interface IPostCategory {
-  slug: string;
+export const tagFilters: Tag[] = [
+  "Angular",
+  "Ionic",
+  "React",
+  "Next",
+  "Nest",
+  "Node",
+];
+
+export interface MetaData {
   title: string;
-  keywords?: Array<string>;
+  dateString: string;
+  mainImageUrl: string;
+  excerpt: string;
+  tags: Tag[];
+  featured: string;
+  keywords: string;
 }
 
 export interface IPost {
   slug: string;
-  title: string;
-  categoryId: string;
-  image: string;
-  createdAt?: string;
-  content: string;
-  keywords?: Array<string>;
+  metaData: MetaData;
 }
-
-export type PostQuery = {
-  categoryId?: string;
-  q?: string;
-};
