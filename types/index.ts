@@ -53,15 +53,15 @@ export interface ISocialMedia {
   telegtam?: string;
 }
 
-export type Tag = "Angular" | "Ionic" | "React" | "Next" | "Nest" | "Node";
+export type Tag = "Node" | "React" | "Next" | "Nest" | "Express" | "Typescript";
 
 export const tagFilters: Tag[] = [
-  "Angular",
-  "Ionic",
   "React",
   "Next",
   "Nest",
   "Node",
+  "Express",
+  "Typescript",
 ];
 
 export interface MetaData {

@@ -1,5 +1,12 @@
 import { ArrowBack } from "@mui/icons-material";
-import { Box, Container, IconButton, Paper, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Divider,
+  IconButton,
+  Paper,
+  Typography,
+} from "@mui/material";
 import fs from "fs";
 import matter from "gray-matter";
 import hljs from "highlight.js";
@@ -14,6 +21,7 @@ import { useEffect } from "react";
 import { Footer } from "../../components/footer";
 import { NavBar } from "../../components/navbar";
 import Meta from "../../helpers/Meta";
+import { AuthorSection } from "../../sections/author-section";
 hljs.registerLanguage("typescript", typescript);
 
 const Post: InferGetStaticPropsType<typeof getStaticProps> = ({
@@ -67,6 +75,10 @@ const Post: InferGetStaticPropsType<typeof getStaticProps> = ({
         </Box>
         <Paper sx={{ paddingX: "1rem" }}>
           <MDXRemote {...source} />
+        </Paper>
+        <Divider sx={{ marginY: "2rem", marginX: "1rem" }} />
+        <Paper sx={{ paddingX: "1rem" }}>
+          <AuthorSection />
         </Paper>
       </Container>
       <Footer />

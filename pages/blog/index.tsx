@@ -155,13 +155,13 @@ const Blog: NextPage<BlogProps> = ({
                   post.metaData.tags.some((tag: Tag) => tags.includes(tag))
                 ) {
                   return (
-                    <Grid key={index} item md={4}>
+                    <Grid key={index} item md={4} xs={12}>
                       <PostCard post={post} />
                     </Grid>
                   );
                 } else if (isAllTag) {
                   return (
-                    <Grid key={index} item md={4}>
+                    <Grid key={index} item md={4} xs={12}>
                       <PostCard post={post} />
                     </Grid>
                   );

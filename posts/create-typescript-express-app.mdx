@@ -4,7 +4,7 @@ dateString: "Septemper 18, 2022"
 mainImageUrl: "/images/posts/typescript.png"
 keywords: "nodejs, typescript, expressjs, restapi, javascript"
 description: "In this article, we'll cover a beginner-friendly way to set up TypeScript in an Express app, understanding the basic constraints."
-tags: ["Next", "React"]
+tags: ["Node", "Express", "TypeScript"]
 featured: "true"
 ---
 
@@ -99,10 +99,10 @@ now create file `nodemon.json` in root directory with the following code:
 
 ```
 {
-  "watch": ["src"],
+  "watch": ["."],
   "ext": ".ts,.js",
   "ignore": [],
-  "exec": "ts-node ./src/index.ts"
+  "exec": "ts-node ./index.ts"
 }
 ```
 
