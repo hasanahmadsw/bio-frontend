@@ -5,6 +5,7 @@ import { IPost } from "../types";
 
 const Post = styled("div")(({ theme }) => ({
   cursor: "pointer",
+  margin: "0.8rem",
   ":hover": {
     "& div": {
       outline: "2px",
@@ -13,11 +14,14 @@ const Post = styled("div")(({ theme }) => ({
   },
 }));
 
-const ImageCard = styled("div")(() => ({
-  border: "5px solid transparent",
+const ImageCard = styled("div")(({ theme }) => ({
+  border: "4px solid transparent",
   borderRadius: "12px",
   transition: "ease-out 0.2s",
   height: "450px",
+  [theme.breakpoints.down("md")]: {
+    height: "350px",
+  },
 }));
 
 interface PostCardProps {
@@ -44,9 +48,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
           fontWeight="700"
           paddingTop="1rem"
         >
-          {/* <Moment format="D MMM YYYY"> */}
           {post.metaData.dateString}
-          {/* </Moment> */}
         </Typography>
         <Typography variant="h3" fontWeight="600" paddingY="1rem">
           {post.metaData.title}
