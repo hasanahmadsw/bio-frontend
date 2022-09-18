@@ -5,7 +5,7 @@ export const AuthorSection = () => {
   return (
     <Grid container alignItems="center">
       <Grid item md={2} xs={12}>
-        <Box width="150px">
+        <Box width="130px">
           <img
             src="/hasan.png"
             alt="hasanahmad"
@@ -21,8 +21,7 @@ export const AuthorSection = () => {
         </Typography>
         <Typography variant="body2" color="primary.A100">
           Hassan Ahmed is a software developer, entrepreneur, and content writer
-          who continues to learn every day about making software that makes the
-          world a better place.
+          who continues to learn every day about makes the world a better place.
         </Typography>
         <Box marginLeft="-1rem">
           <CustomLink href="/about" fontWeight="700">
