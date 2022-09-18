@@ -15,7 +15,7 @@ import {
   experiencesData,
 } from "../utils/data";
 
-const Resume: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Meta title="About Me | Hasan Ahmad" />
@@ -126,4 +126,4 @@ const Resume: NextPage = () => {
   );
 };
 
-export default Resume;
+export default About;

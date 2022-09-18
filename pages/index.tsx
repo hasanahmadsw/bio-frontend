@@ -35,7 +35,6 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
         <BlogSection posts={posts} />
         <Divider sx={{ marginY: "4rem" }} />
         <ContactSection />
-        {/* <ResumeSection /> */}
       </Container>
       <Footer />
     </>

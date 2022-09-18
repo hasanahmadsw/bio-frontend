@@ -36,8 +36,8 @@ const items = [
     url: "/services",
   },
   {
-    name: "Resume",
-    url: "/resume",
+    name: "About",
+    url: "/about",
   },
   {
     name: "Contact",
