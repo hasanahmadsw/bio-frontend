@@ -5,7 +5,7 @@ import { IPost } from "../types";
 
 const Post = styled("div")(({ theme }) => ({
   cursor: "pointer",
-  margin: "0.8rem",
+  borderRadius: "12px",
   ":hover": {
     "& div": {
       outline: "2px",
