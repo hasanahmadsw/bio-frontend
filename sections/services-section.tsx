@@ -8,7 +8,7 @@ export const ServicesSection = () => {
         <Grid item md={8}>
           <Box>
             <Typography
-              variant="h1"
+              variant="h2"
               fontWeight="500"
               paddingTop="1.2rem"
               paddingBottom="1rem"

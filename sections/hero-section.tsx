@@ -30,7 +30,7 @@ export const HeroSection = () => {
         <Grid item md={8} xs={12}>
           <Chip
             label="Hasan Ahmad"
-            component="h1"
+            component="h2"
             sx={{
               padding: "0.8rem",
               fontSize: "1rem",
@@ -38,7 +38,7 @@ export const HeroSection = () => {
             }}
           />
           <Typography
-            variant="h1"
+            variant="h2"
             fontSize="2.5rem"
             fontWeight="500"
             paddingTop="1.2rem"
