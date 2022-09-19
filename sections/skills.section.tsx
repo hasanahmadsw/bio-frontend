@@ -14,7 +14,7 @@ export const SkillsSection = () => {
     <Paper sx={{ padding: "1rem" }}>
       <Box>
         <Typography
-          variant="h1"
+          variant="h2"
           fontWeight="500"
           paddingTop="1rem"
           paddingBottom="1rem"

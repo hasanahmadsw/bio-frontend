@@ -44,7 +44,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
     <Paper sx={{ padding: "2rem" }}>
       <Box marginBottom="1.2rem">
         <Box>
-          <Typography variant="h1" fontWeight="500" paddingBottom="1rem">
+          <Typography variant="h2" fontWeight="500" paddingBottom="1rem">
             Blog recommendations
           </Typography>
         </Box>

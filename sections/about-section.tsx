@@ -12,7 +12,7 @@ export const AboutSection = () => {
         </Grid>
         <Grid item md={8}>
           <Typography
-            variant="h1"
+            variant="h2"
             fontSize="2.4rem"
             paddingTop={{ md: "6rem", xs: "none" }}
           >
