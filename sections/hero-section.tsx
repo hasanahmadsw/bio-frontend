@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { SocialContact } from "../components/social-contact";
 
 export const ImageStyle = styled("img")(({ theme }) => ({
-  height: "500px",
+  width: "280px",
   [theme.breakpoints.down("sm")]: {
-    height: "300px",
+    width: "230px",
   },
 }));
 

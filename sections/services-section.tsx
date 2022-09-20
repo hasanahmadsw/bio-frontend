@@ -1,11 +1,26 @@
-import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Divider,
+  Grid,
+  Paper,
+  Stack,
+  styled,
+  Typography,
+} from "@mui/material";
 import { ServiceCard } from "../components/service-card";
 import { servicesData } from "../utils/data";
+
+export const ImageStyle = styled("img")(({ theme }) => ({
+  width: "320px",
+  [theme.breakpoints.down("sm")]: {
+    width: "250px",
+  },
+}));
 export const ServicesSection = () => {
   return (
     <Paper sx={{ padding: "1rem" }}>
-      <Grid container spacing={2}>
-        <Grid item md={8}>
+      <Grid container spacing={2} flexWrap="wrap-reverse">
+        <Grid item md={8} xs={12}>
           <Box>
             <Typography
               variant="h2"
@@ -28,13 +43,13 @@ export const ServicesSection = () => {
             </Stack>
           </Box>
         </Grid>
-        <Grid item md={4}>
+        <Grid item md={4} xs={12}>
           <Box
             padding="2rem"
-            paddingTop="12rem"
-            display={{ md: "block", xs: "none" }}
+            paddingTop={{ md: "12rem", xs: "0" }}
+            textAlign="center"
           >
-            <img src="/about.png" alt="hasan+ahmad" width="300" />
+            <ImageStyle src="/wow.png" alt="hasan+ahmad" />
           </Box>
         </Grid>
       </Grid>
