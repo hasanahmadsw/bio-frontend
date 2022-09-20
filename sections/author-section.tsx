@@ -20,7 +20,7 @@ export const AuthorSection = () => {
           Written by Hasan Ahmad
         </Typography>
         <Typography variant="body2" color="primary.A100">
-          Hassan Ahmed is a software developer, entrepreneur, and content writer
+          Hasan Ahmed is a software developer, entrepreneur, and content writer
           who continues to learn every day about makes the world a better place.
         </Typography>
         <Box marginLeft="-1rem">

@@ -56,26 +56,75 @@ const Post: InferGetStaticPropsType<typeof getStaticProps> = ({
             Back to blog
           </Typography>
         </Box>
-        <Paper sx={{ padding: "1rem" }}>
-          <Typography variant="h3" fontWeight="600" paddingY="1rem">
-            {meta.title}
-          </Typography>
-          <Typography color="primary.A100" variant="h4" fontWeight="700">
-            {meta.dateString}
-          </Typography>
-        </Paper>
-        <Box height="450px" padding="1rem">
-          <img
-            src={meta.mainImageUrl}
-            alt={meta.title}
-            height="100%"
-            width="100%"
-            style={{ objectFit: "cover", borderRadius: "8px" }}
-          />
-        </Box>
-        <Paper sx={{ paddingX: "1rem" }}>
-          <MDXRemote {...source} />
-        </Paper>
+        {meta.lang === "ar" ? (
+          <Paper sx={{ direction: "rtl", fontFamily: "Cairo" }}>
+            <Paper sx={{ padding: "1rem" }}>
+              <Typography variant="h3" fontWeight="600" fontFamily="Cairo">
+                {meta.title}
+              </Typography>
+              <Typography color="primary.A100" variant="h4" fontWeight="700">
+                {meta.dateString}
+              </Typography>
+            </Paper>
+            <Box height="450px" padding="1rem">
+              <img
+                src={meta.mainImageUrl}
+                alt={meta.title}
+                height="100%"
+                width="100%"
+                style={{ objectFit: "cover", borderRadius: "8px" }}
+              />
+            </Box>
+            <Paper sx={{ paddingX: "1rem" }}>
+              <MDXRemote {...source} />
+            </Paper>
+          </Paper>
+        ) : (
+          <Paper>
+            <Paper sx={{ padding: "1rem" }}>
+              <Typography variant="h3" fontWeight="600" paddingY="1rem">
+                {meta.title}
+              </Typography>
+              <Typography color="primary.A100" variant="h4" fontWeight="700">
+                {meta.dateString}
+              </Typography>
+            </Paper>
+            <Box height="450px" padding="1rem">
+              <img
+                src={meta.mainImageUrl}
+                alt={meta.title}
+                height="100%"
+                width="100%"
+                style={{ objectFit: "cover", borderRadius: "8px" }}
+              />
+            </Box>
+            <Paper sx={{ paddingX: "1rem" }}>
+              <MDXRemote {...source} />
+            </Paper>
+          </Paper>
+        )}
+        {/* <Paper>
+          <Paper sx={{ padding: "1rem" }}>
+            <Typography variant="h3" fontWeight="600" paddingY="1rem">
+              {meta.title}
+            </Typography>
+            <Typography color="primary.A100" variant="h4" fontWeight="700">
+              {meta.dateString}
+            </Typography>
+          </Paper>
+          <Box height="450px" padding="1rem">
+            <img
+              src={meta.mainImageUrl}
+              alt={meta.title}
+              height="100%"
+              width="100%"
+              style={{ objectFit: "cover", borderRadius: "8px" }}
+            />
+          </Box>
+          <Paper sx={{ paddingX: "1rem" }}>
+            <MDXRemote {...source} />
+          </Paper>
+        </Paper> */}
         <Divider sx={{ marginY: "2rem", marginX: "1rem" }} />
         <Paper sx={{ paddingX: "1rem" }}>
           <AuthorSection />
