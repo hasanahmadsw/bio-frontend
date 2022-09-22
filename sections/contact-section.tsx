@@ -1,4 +1,5 @@
 import { Button, Paper, Typography } from "@mui/material";
+import Link from "next/link";
 
 export const ContactSection = () => {
   return (
@@ -15,11 +16,13 @@ export const ContactSection = () => {
         I am here to support you. I can help you with the technical side of your
         business and provide technology advice
       </Typography>
-      <Button variant="contained" sx={{ paddingX: "2rem" }}>
-        <Typography variant="body2" fontWeight="700">
-          Contact Me
-        </Typography>
-      </Button>
+      <Link href="/contact">
+        <Button variant="contained" sx={{ paddingX: "2rem" }}>
+          <Typography variant="body2" fontWeight="700">
+            Contact Me
+          </Typography>
+        </Button>
+      </Link>
     </Paper>
   );
 };

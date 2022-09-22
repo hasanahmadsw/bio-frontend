@@ -53,9 +53,17 @@ export interface ISocialMedia {
   telegtam?: string;
 }
 
-export type Tag = "Node" | "React" | "Next" | "Nest" | "Express" | "Typescript";
+export type Tag =
+  | "Node"
+  | "React"
+  | "Next"
+  | "Nest"
+  | "Express"
+  | "Typescript"
+  | "Software Engineering";
 
 export const tagFilters: Tag[] = [
+  "Software Engineering",
   "React",
   "Next",
   "Nest",
