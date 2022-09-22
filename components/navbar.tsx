@@ -62,7 +62,7 @@ export const NavBar = (props: Props) => {
     <Box sx={{ textAlign: "center" }}>
       <Box
         paddingY="2rem"
-        paddingX="2rem"
+        paddingX="1.5rem"
         display="flex"
         justifyContent="space-between"
         alignItems="center"
@@ -86,7 +86,7 @@ export const NavBar = (props: Props) => {
             <ListItem disablePadding>
               <Link href={item.url}>
                 <ListItemButton
-                  sx={{ padding: "2rem" }}
+                  sx={{ paddingX: "1.5rem", paddingY: "0.8rem" }}
                   onClick={handleDrawerToggle}
                 >
                   <ListItemText primary={item.name} />
@@ -165,11 +165,7 @@ export const NavBar = (props: Props) => {
               <Box display={{ md: "block", xs: "none" }}>
                 <ThemeToggle />
               </Box>
-              <Box
-                display={{ md: "none", xs: "flex" }}
-                justifyContent="right"
-                mr={2}
-              >
+              <Box display={{ md: "none", xs: "flex" }} justifyContent="right">
                 <IconButton
                   aria-label="open drawer"
                   edge="start"
