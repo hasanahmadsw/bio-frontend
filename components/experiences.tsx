@@ -9,7 +9,7 @@ export interface ExperiencesProps {
 
 export const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
   return (
-    <Stack spacing={2} direction="column-reverse" marginTop="1rem">
+    <Stack spacing={2} direction="column" marginTop="1rem">
       {experiences.map((experience) => (
         <ExperienceCard experience={experience} key={experience.title} />
       ))}

@@ -9,7 +9,7 @@ export interface EducationsProps {
 
 export const Educations: React.FC<EducationsProps> = ({ educations }) => {
   return (
-    <Stack spacing={2} direction="column-reverse" marginTop="1rem">
+    <Stack spacing={2} direction="column">
       {educations.map((education) => (
         <EducationCard education={education} key={education.title} />
       ))}

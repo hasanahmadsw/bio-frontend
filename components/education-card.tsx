@@ -8,7 +8,11 @@ export interface EducationCardProps {
 export const EducationCard: React.FC<EducationCardProps> = ({ education }) => {
   return (
     <Paper elevation={1} sx={{ padding: "2rem" }}>
-      <Stack direction="row" spacing={2} paddingY="0.5rem">
+      <Stack
+        direction={{ md: "row", xs: "column" }}
+        spacing={2}
+        paddingY="0.5rem"
+      >
         <Typography variant="h4" fontWeight="500">
           {education.university}
         </Typography>
